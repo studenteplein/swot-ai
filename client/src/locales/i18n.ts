@@ -3,6 +3,7 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 // Import your JSON translations
+import translationAf from './af/translation.json';
 import translationEn from './en/translation.json';
 import translationAr from './ar/translation.json';
 import translationCa from './ca/translation.json';
@@ -36,6 +37,7 @@ import translationZh_Hant from './zh-Hant/translation.json';
 export const defaultNS = 'translation';
 
 export const resources = {
+  af: { translation: translationAf },
   en: { translation: translationEn },
   ar: { translation: translationAr },
   ca: { translation: translationCa },

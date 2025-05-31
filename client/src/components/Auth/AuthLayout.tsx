@@ -12,7 +12,7 @@ const ErrorRender = ({ children }: { children: React.ReactNode }) => (
       role="alert"
       aria-live="assertive"
       className="rounded-md border border-red-500 bg-red-500/10 px-3 py-2 text-sm text-gray-600 dark:text-gray-200"
-    >
+    > 
       {children}
     </div>
   </div>
@@ -62,10 +62,10 @@ function AuthLayout({
       <Banner />
       <BlinkAnimation active={isFetching}>
         <div className="mt-6 h-10 w-full bg-cover">
-          <img
+        <img
             src="/assets/logo.svg"
             className="h-full w-full object-contain"
-            alt={localize('com_ui_logo', { 0: startupConfig?.appTitle ?? 'LibreChat' })}
+            alt={localize('com_ui_logo', { 0: startupConfig?.appTitle ?? 'Swot.ai' })}
           />
         </div>
       </BlinkAnimation>

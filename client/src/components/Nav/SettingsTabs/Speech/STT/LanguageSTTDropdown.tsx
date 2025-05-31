@@ -1,3 +1,5 @@
+//This file has been edited by StudentePlein
+
 import { useRecoilState } from 'recoil';
 import { Dropdown } from '~/components/ui';
 import { useLocalize } from '~/hooks';
@@ -8,7 +10,7 @@ export default function LanguageSTTDropdown() {
   const [languageSTT, setLanguageSTT] = useRecoilState<string>(store.languageSTT);
 
   const languageOptions = [
-    { value: 'af', label: 'Afrikaans' },
+    { value: 'af-ZA', label: 'Afrikaans' },
     { value: 'eu', label: 'Basque' },
     { value: 'bg', label: 'Bulgarian' },
     { value: 'ca', label: 'Catalan' },

@@ -1,17 +1,184 @@
-**/.circleci
-**/.editorconfig
-**/.dockerignore
-**/.git
-**/.DS_Store
-**/.vscode
-**/node_modules
+# Version control
+.git
+.gitignore
+.gitattributes
+.github
 
-# Specific patterns to ignore
+# IDE and editor files
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Dependencies
+**/node_modules
+**/.npm
+**/.yarn
+**/.pnp*
+
+# Build outputs and caches
+**/dist
+**/build
+**/.cache
+**/.parcel-cache
+**/.next
+**/.nuxt
+**/.turbo
+
+# Logs
+**/logs
+**/*.log
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/lerna-debug.log*
+**/.pnpm-debug.log*
+
+# Test coverage
+**/coverage
+**/.nyc_output
+
+# Environment files (except .env which is explicitly copied)
+.env.local
+.env.development
+.env.test
+.env.production
+.env*.local
+
+# Documentation
+docs
+*.md
+!README.md
+LICENSE
+
+# CI/CD
+.circleci
+.travis.yml
+.gitlab-ci.yml
+azure-pipelines.yml
+
+# Docker files (we don't need to copy Dockerfiles into the image)
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Database files
 data-node
 meili_data*
-librechat*
-Dockerfile*
-docs
+*.sqlite
+*.db
 
-# Ignore all hidden files
-.*
+# Temporary files
+*.tmp
+*.temp
+.tmp
+.temp
+tmp/
+temp/
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# Backup files
+*.bak
+*.backup
+*~
+*.orig
+
+# Archive files
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# Media files (if not needed)
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.mkv
+
+# Large data files
+*.csv
+*.sql
+*.dump
+
+# Build scripts and configs (unless needed in container)
+build-*.sh
+deploy-*.sh
+fix-*.sh
+scripts/
+!scripts/startup.sh
+
+# Test files
+**/test
+**/tests
+**/__tests__
+**/*.test.js
+**/*.spec.js
+**/*.test.ts
+**/*.spec.ts
+e2e/
+**/*.spec.*
+jest.config.*
+playwright.config.*
+setupTests.*
+
+# Miscellaneous
+.editorconfig
+.eslintcache
+.prettierignore
+.stylelintignore
+*.patch
+.yarn-integrity
+
+# LibreChat specific
+!librechat.example.yaml
+
+# Additional optimizations for faster builds
+uploads/
+data/
+# custom_mcp_servers/ # Comment out to include MCP servers
+helm/
+utils/docker/
+packages/*/dist
+packages/*/build
+client/dist
+api/logs
+.turbo
+.cache
+*.lock
+*lock.json
+!package-lock.json
+
+# Remove development-only directories
+.vscode/
+.idea/
+**/.git/
+**/.github/
+**/node_modules/.cache/
+

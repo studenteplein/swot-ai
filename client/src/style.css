@@ -40,17 +40,6 @@
   --red-800: #991b1b;
   --red-900: #7f1d1d;
   --red-950: #450a0a;
-  --amber-50: #fffbeb;
-  --amber-100: #fef3c7;
-  --amber-200: #fde68a;
-  --amber-300: #fcd34d;
-  --amber-400: #fbbf24;
-  --amber-500: #f59e0b;
-  --amber-600: #d97706;
-  --amber-700: #b45309;
-  --amber-800: #92400e;
-  --amber-900: #78350f;
-  --amber-950: #451a03;
   --gizmo-gray-500: #999;
   --gizmo-gray-600: #666;
   --gizmo-gray-950: #0f0f0f;
@@ -61,64 +50,63 @@
   --font-size-xl: 1.25rem;
 }
 html {
-  --presentation: var(--white);
-  --text-primary: var(--gray-800);
-  --text-secondary: var(--gray-600);
-  --text-secondary-alt: var(--gray-500);
-  --text-tertiary: var(--gray-500);
-  --text-warning: var(--amber-500);
-  --ring-primary: var(--gray-500);
+  --presentation:  var(--white);
+  --text-primary: #2c3a38;
+  --text-secondary: #4a5553; 
+  --text-secondary-alt: #637471;
+  --text-tertiary: #34433f;
+  --ring-primary: #80cbb7;
   --header-primary: var(--white);
-  --header-hover: var(--gray-50);
-  --header-button-hover: var(--gray-50);
-  --surface-active: var(--gray-100);
-  --surface-active-alt: var(--gray-200);
-  --surface-hover: var(--gray-200);
-  --surface-hover-alt: var(--gray-300);
+  --header-hover: #e8f5f2;
+  --header-button-hover: #e8f5f2;
+  --surface-active: #d4ebe6;
+  --surface-active-alt: #c0e6dd;
+  --surface-hover: #e8f5f2;
+  --surface-hover-alt: #d4ebe6;
   --surface-primary: var(--white);
-  --surface-primary-alt: var(--gray-50);
-  --surface-primary-contrast: var(--gray-100);
-  --surface-secondary: var(--gray-50);
-  --surface-secondary-alt: var(--gray-200);
-  --surface-tertiary: var(--gray-100);
+  --surface-primary-alt: #f7fbfa;
+  --surface-primary-contrast: #e8f5f2;
+  --surface-secondary: #f1f7f5;
+  --surface-secondary-alt: #e8f5f2;
+  --surface-tertiary: #e8f5f2;
   --surface-tertiary-alt: var(--white);
   --surface-dialog: var(--white);
-  --surface-submit: var(--green-700);
-  --surface-submit-hover: var(--green-800);
-  --surface-destructive: var(--red-700);
-  --surface-destructive-hover: var(--red-800);
+  --surface-submit: #2bab95;
+  --surface-submit-hover: #239681;
+  --surface-destructive: #e35d6a;
+  --surface-destructive-hover: #d44d5a;
   --surface-chat: var(--white);
-  --border-light: var(--gray-200);
-  --border-medium-alt: var(--gray-300);
-  --border-medium: var(--gray-300);
-  --border-heavy: var(--gray-400);
-  --border-xheavy: var(--gray-500);
-  /* These are test styles */
+  --border-light: #d4ebe6;
+  --border-medium-alt: #c0e6dd;
+  --border-medium: #c0e6dd;
+  --border-heavy: #637471;
+  --border-xheavy: #4ab69c;
 
-  --background: 0 0% 100%;
-  --foreground: 0 0% 3.9%;
+  /* These are test styles */
+  --background: 164 43% 98%;
+  --foreground: 173 12% 20%;
   --card: 0 0% 100%;
-  --card-foreground: 0 0% 3.9%;
-  --primary: 0 0% 9%;
-  --primary-foreground: 0 0% 98%;
-  --secondary: 0 0% 96.1%;
-  --secondary-foreground: 0 0% 9%;
-  --muted: 0 0% 96.1%;
-  --muted-foreground: 0 0% 45.1%;
-  --accent: 0 0% 96.1%;
-  --accent-foreground: 0 0% 9%;
-  --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 0 0% 98%;
-  --border: 0 0% 89.8%;
-  --input: 0 0% 89.8%;
-  --ring: 0 0% 3.9%;
+  --card-foreground: 173 12% 20%;
+  --primary: 173 60% 42%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 164 43% 95%;
+  --secondary-foreground: 173 12% 20%;
+  --muted: 164 43% 95%;
+  --muted-foreground: 173 8% 45%;
+  --accent: 164 43% 95%;
+  --accent-foreground: 173 12% 20%;
+  --destructive: 353 75% 63%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 164 43% 90%;
+  --input: 164 43% 90%;
+  --ring: 173 60% 42%;
   --radius: 0.5rem;
-  --chart-1: 12 76% 61%;
-  --chart-2: 173 58% 39%;
-  --chart-3: 197 37% 24%;
-  --chart-4: 43 74% 66%;
-  --chart-5: 27 87% 67%;
-  --switch-unchecked: 0 0% 58%;
+  --chart-1: 173 60% 42%;
+  --chart-2: 164 43% 60%;
+  --chart-3: 182 32% 40%;
+  --chart-4: 155 48% 55%;
+  --chart-5: 168 52% 45%;
+  --switch-unchecked: 173 8% 45%;
 }
 .dark {
   --presentation: var(--gray-800);
@@ -126,7 +114,6 @@ html {
   --text-secondary: var(--gray-300);
   --text-secondary-alt: var(--gray-400);
   --text-tertiary: var(--gray-500);
-  --text-warning: var(--amber-500);
   --header-primary: var(--gray-700);
   --header-hover: var(--gray-600);
   --header-button-hover: var(--gray-700);
@@ -728,8 +715,8 @@ pre {
 
 .premium-scroll-button:hover:not(:active) {
   transform: translateY(-1.5px) scale(1.02);
-  box-shadow:
-    0 5px 10px rgba(0, 0, 0, 0.07),
+  box-shadow: 
+    0 5px 10px rgba(0, 0, 0, 0.07), 
     0 7px 14px rgba(0, 0, 0, 0.1),
     0 0 0 1px rgba(255, 255, 255, 0.1);
 }
@@ -1039,7 +1026,7 @@ pre {
   --tw-prose-body: #374151;
   --tw-prose-headings: #111827;
   --tw-prose-lead: #4b5563;
-  --tw-prose-links: #0066cc;
+  --tw-prose-links: #111827;
   --tw-prose-bold: #111827;
   --tw-prose-counters: #6b7280;
   --tw-prose-bullets: #d1d5db;
@@ -2591,9 +2578,7 @@ html {
 .animate-popover {
   transform-origin: top;
   opacity: 0;
-  transition:
-    opacity 150ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(0.95) translateY(-0.5rem);
 }
 
@@ -2605,9 +2590,7 @@ html {
 .animate-popover-left {
   transform-origin: left;
   opacity: 0;
-  transition:
-    opacity 150ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(0.95) translateX(-0.5rem);
 }
 
@@ -2694,47 +2677,4 @@ html {
 
 .badge-icon {
   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-@keyframes shimmer {
-  0% {
-    background-position: 200% 0;
-  }
-  100% {
-    background-position: -200% 0;
-  }
-}
-
-.shimmer {
-  display: inline-block;
-  position: relative;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.8) 25%,
-    rgba(179, 179, 179, 0.25) 50%,
-    rgba(255, 255, 255, 0.8) 75%
-  );
-  background-size: 200% 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shimmer 4s linear infinite;
-}
-
-:global(.dark) .shimmer {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255) 25%,
-    rgba(129, 130, 134, 0.18) 50%,
-    rgb(255, 255, 255) 75%
-  );
-  background-size: 200% 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shimmer 4s linear infinite;
-}
-
-.custom-style-2 {
-  padding: 12px;
 }
